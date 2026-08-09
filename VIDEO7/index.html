@@ -1,0 +1,70 @@
+<!-- TimeStamps ⌚
+02:30 What is a Form 
+
+03:36 Input Tag 
+=> to give input in form
+
+02:54 Get and Post 
+=> get is simple used to take small quantity of input 
+post take large input
+
+05:09 Label Tag  
+denote a particular form box what denote i.e what we fill in this box like name etc
+
+08:17 Textarea Tag
+denote a particular form box use to write
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Lets learn it</title>
+</head>
+
+<body>
+    <h1>Form to apply for Sigma Web Development course - TA </h1>
+    <!-- to create a form  -->
+     <!-- action="post" -> to take lage values or input -->
+    <form action="post">
+        <!-- di is used as linke change the line like br -->
+        <div>
+            <!-- id is unique identifier -->
+            <!-- for="username" & id="username" should be same  -->
+             <!-- autofocus highlight the box that this area filling is important -->
+            <label for="username">Enter your Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" autofocus>
+        </div>
+        <div>
+            <!-- type="radio" this denote that weather this is in bullet ,square form  -->
+             <!-- if we keep this (name="gender" linke we did in male and female) same then either of two only one will select -->
+              <!-- name="gender" value="male" this is like folder , file -->
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+        <div>
+            <label for="comment">Enter your comment</label>
+            <br>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+        </div>
+
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+          </select>
+        </div>
+    </form>
+</body>
+
+</html>
