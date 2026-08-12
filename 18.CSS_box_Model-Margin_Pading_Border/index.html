@@ -1,0 +1,55 @@
+<!-- TimeStamps:
+00:35 CSS Box model
+see in img 
+
+14:50 Margin Collapse
+when to margin are assign or overlape (one after other) then magirn with higer size will appear between them -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+        /* below is used to remove space for all  */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* below this is used to make all class with name box ,their bg is aqua */
+        .box {
+            background-color: aqua;
+        }
+
+        /* this denote other attribute or denote specific class  */
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin:35px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+        }
+        .box2{
+            color:red;
+            padding: 10px;
+            margin:25px;
+            border: 2px solid black;
+            /* when this (box-sizing) is not written this mean that make content box of size 200 */
+            height: 200px;
+            /* when this is write then its mean that your content+padding+margin overall 200 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+</body>
+
+</html>

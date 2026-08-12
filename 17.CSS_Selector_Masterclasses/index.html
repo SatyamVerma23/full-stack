@@ -1,0 +1,117 @@
+<!-- TimeStamps:
+00.112 Internal CSS: 
+CSS written inside the <style> tag in an HTML file.
+
+00.112 Element Selector:
+ Selects all elements of a particular HTML tag.
+
+00.112 Class Selector: 
+Selects elements having a specific class.
+
+00.112 ID Selector: 
+Selects an element having a specific ID.
+
+00.112 Child Selector: 
+Selects the direct child of an element.
+
+00.112 Descendant Selector: 
+Selects elements inside another element.
+
+00.112 Universal Selector: 
+Selects all HTML elements.
+
+00.112 Pseudo Selector: 
+Selects an element in a special state. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector  */
+        div{
+            /* background-color: red; */
+        }
+
+        /* Class Selector  */
+        .red{
+            background-color: red;
+        }
+
+        /* Id Selector */
+        #green{
+            background-color: green;
+        }
+
+        /* Child Selectors  */
+        /* it says===> div k child i.e p ko color or background change kro */
+        div > p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Descendant Selector  */
+        /* it says===> div k andar ka chahe wo child ho ya na pr uske p ko color or background change kro */
+        div p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Universal Selector */
+        * {
+            /* by this you remove bydefault spaces */
+            margin:0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector  */
+        /* below this is used is used to change color of link when any one alredy visited */
+        a:visited{
+            color: yellow
+        }
+
+        /* to denote not visited */
+        a:link {
+            color: green;
+        }
+
+        /* when you click at a denoted particular link (like click here) then that background show color */
+        a:active{
+            background-color: red;
+        }
+
+        /* when you just put your cursor at a denoted particular link (like click here) then that background show color */
+        a:hover{
+            background-color: yellow;
+        }
+
+        /* to change color of fist para or element  */
+        /*it says====> p ka first child ka color aqua kr do */
+        p:first-child{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="red">
+        I am a div
+        <article>
+
+            <p>I am a para inside div</p>
+        </article>
+    </div>
+
+    <div id="green">
+        I am another div
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook2.com">Go to Facebook</a>
+</body>
+</html>
