@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box {
+            width: 30vw;
+            height: 30vh;
+            border: 2px solid black;
+
+            /* overflow → If content doesn't fit, the browser automatically adds a scrollbar when needed. */
+            /* overflow: auto;
+
+            overflow-x → Hides content that goes outside horizontally. No horizontal scrollbar.
+            overflow-x: hidden;
+
+            overflow-y → Hides content that goes outside vertically. No vetical scrollbar.
+            overflow-y: scroll; */
+
+            /* This controls both directions:
+                auto → Horizontal overflow gets a scrollbar when needed.
+                hidden → Vertical overflow is hidden. */
+            overflow: auto hidden;
+
+            /* white-space → Prevents text from moving to the next line. */
+            /* white-space: nowrap;
+
+            text-overflow → Shows ... when text is too long to fit.
+            text-overflow: ellipsis; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a good boy and I love to write Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta iure amet
+        unde voluptas nihil vero, maxime esse quis quos natus rem, earum aspernatur quasi aut ea commodi nostrum
+        voluptate! Sint rerum nostrum perferendis sapiente explicabo perspiciatis, ut magni? Aspernatur, provident
+        dolorum unde corporis doloribus rem!
+    </div>
+</body>
+
+</html>
