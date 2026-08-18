@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: grid;                           <!--total 3 rows -->
+            grid-template-areas: "nav nav nav"      <!--this show col1 col2 col3 in one row-->
+                "side article article"              <!--this show col1 col2 col3 in 2nd row-->
+                "footer footer footer";             <!--this show col1 col2 col3 in 3rd row-->
+        }
+
+        .item {
+            border: 2px solid red;
+            height: 55px;
+        }
+
+        .item-1 {
+            grid-area: nav;
+            background-color: aqua;
+        }
+
+        .item-2 {
+            grid-area: side;
+            background-color: beige;
+        }
+
+        .item-3 {
+            grid-area: article;
+            background-color: azure;
+        }
+
+        .item-4 {
+            grid-area: footer;
+        }
+
+        .item-5 {
+            /* below is uused to make overlap of 5 with one bcz area name is same i.e nav */
+            grid-area: nav;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+    </div>
+</body>
+
+</html>
