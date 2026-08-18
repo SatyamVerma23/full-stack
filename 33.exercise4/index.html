@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 4</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+
+            /* to use multiple time as per need we do this */
+            --color: rgb(187, 129, 233);
+            --seccolor: rgb(87, 32, 99); 
+            --defpad: 4px;
+            --defop: 0.4;
+        }
+        body{
+            background-color: var(--color);
+        } 
+        .index{
+            display: flex;
+            background-color: var(--seccolor);
+            color: aliceblue;
+        }
+        .indexes{
+            padding: var(--defpad);
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="index">
+        <div class="indexes">
+            <a href="/">HOME </a>
+        </div>
+        <div class="indexes">
+            <a href="/">CONTACT</a>
+        </div>
+        <div class="indexes">
+            <a href="/">SERVICES</a>
+        </div>
+    </div>
+</body>
+</html>
