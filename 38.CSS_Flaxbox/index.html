@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+
+            /* this below line is used to denote where your content(container) will put or denote */
+            /* justify-content: center; */
+
+            /* when more than 1 line are apear and that content material want to put in center */
+            align-items: center;
+            /* flex-direction: column; */
+
+            /* if content will oversize then make in next line */
+            flex-wrap: wrap;
+            /* align-content: flex-start; */
+            /* there is no justify-items  in flexbox; */
+            flex-flow: row wrap;
+
+            /* to give betwen div tag element */
+            /* gap: 30px; 
+            row-gap: 40px;
+            column-gap: 10px; */
+            gap: 40px 10px;
+                 /* |     |
+                row gap. columns gap */
+        }
+
+        .item {  
+            /* below line is denote that evry div box are of same size */
+            /* flex-grow: 1; */
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color: blueviolet;
+        }
+
+        /* to assign position of tag (div) contant */
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }
+
+        .item1{  
+
+            /* bellow line is used give more space , to that div box where this is denoted */
+            /* flex-grow: 2; */
+
+            /* below line is used for 
+            if we reduse wesite size then div where this denote, boxses will reduse into 2x spped */
+            /* flex-shrink: 2; */
+
+            /* to change position of particular element */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order-1">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            
+         
+        </div>
+    </main>
+
+</body>
+
+</html>
