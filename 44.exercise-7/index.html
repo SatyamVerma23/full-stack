@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            padding: 25px 25px;
+            font-family: "Segoe UI";
+        }
+        .right ul{
+            list-style: none;
+            display: flex;
+        }
+        .right ul li{
+            
+            margin: 0 8px;
+        }
+        .first{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+        .heading{
+                font-size: 29px;
+                padding: 25px;
+        }
+        .info{
+            padding: 25px;
+        }
+        .firstbutton button{
+            background-color: rgb(51, 168, 241);
+            height: 30px;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            padding: 2px 5px;
+        }
+        .item{
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(226, 218, 218);
+            width: 50vw;
+            height: 9vh;
+            border-radius: 10px;
+        }
+        .item-lang{
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+        .btn{
+            font-size: 13px;
+            font-family: serif;
+            border: none;
+            border-radius: 3px;
+            color: white;
+        }
+        .blue{
+            background-color: rgb(95, 168, 237);
+        }
+        .green{
+            background-color: greenyellow;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:12px;
+            text-align: center;
+            justify-content: center;
+            padding: 50px;
+        }
+        .item{
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-logo.svg" alt="logo">
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Product</li>
+                    <li>Pricing</li>
+                    <li>Recources</li>
+                    <li>About us</li>
+                    <li><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt="logo2"></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="heading">
+                Download <b>UltraEdit</b> for Windows
+            </div>
+            <div class="info">Download and try ultraEditbefore you buy it!this download include the full Windows version of the text editor</div>
+            <div class="firstbutton">
+                <button>Download mac or linux version</button>
+            </div>
+        </section>
+        <section class="third">
+            <div class="grid">
+                <div class="item">
+                    <div class="item-lang">English</div>
+                    <button class="btn blue"><a href="/ue_english.exe">Download 32-bit</a></button>
+                    <button class="btn green"><a href="/ue_english.exe">Download 64-bit</a></button> 
+                </div>
+                <div class="item">
+                    <div class="item-lang">English</div>
+                    <button class="btn blue"><a href="/ue_english.exe">Download 32-bit</a></button>
+                    <button class="btn green"><a href="/ue_english.exe">Download 64-bit</a></button> 
+                </div>
+                <div class="item">
+                    <div class="item-lang">English</div>
+                    <button class="btn blue"><a href="/ue_english.exe">Download 32-bit</a></button>
+                    <button class="btn green"><a href="/ue_english.exe">Download 64-bit</a></button> 
+                </div>
+                <div class="item">
+                    <div class="item-lang">English</div>
+                    <button class="btn blue"><a href="/ue_english.exe">Download 32-bit</a></button>
+                    <button class="btn green"><a href="/ue_english.exe">Download 64-bit</a></button> 
+                </div>
+                <div class="item">
+                    <div class="item-lang">English</div>
+                    <button class="btn blue"><a href="/ue_english.exe">Download 32-bit</a></button>
+                    <button class="btn green"><a href="/ue_english.exe">Download 64-bit</a></button> 
+                </div>
+                <div class="item">
+                    <div class="item-lang">English</div>
+                    <button class="btn blue"><a href="/ue_english.exe">Download 32-bit</a></button>
+                    <button class="btn green"><a href="/ue_english.exe">Download 64-bit</a></button> 
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
