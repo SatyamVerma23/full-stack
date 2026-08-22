@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+.press{
+    text-align: center;
+    text-align: center;
+    padding: 10px;
+}
+nav img{
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+.main {
+    height: 644px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+nav button {
+    position: relative;
+    z-index: 10;
+    margin: 2px 10px;
+}
+.language{
+    height: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.click{
+    height: 20px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    font-family: Haettenschweiler;
+}
+.beech{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+}
+.fline{
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+.sline{
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+.tline{
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+.belowbeech{
+    padding: 15px;
+}
+.email input {
+    width: 350px;
+    height: 30px;
+    font-size: 18px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid rgb(242, 233, 233);
+}
+.getbutton button {
+    height: 25px;
+    font-size: 18px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background-color: rgb(207, 28, 28);
+    border: 2px solid rgb(236, 12, 12);
+    border-radius: 10px;
+    color: white;
+}
+.line {
+    height: 15px;
+    background-color: grey;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
