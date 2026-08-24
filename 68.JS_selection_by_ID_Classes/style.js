@@ -1,3 +1,5 @@
+// page 37
+// https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/JS_Chapterwise_Notes.pdf
 console.log("Harry")
 
 // let boxes = document.getElementsByClassName("box")
